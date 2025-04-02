@@ -1,0 +1,138 @@
+.head {
+  height: 4.8rem;
+  display: flex;
+  justify-content: space-between;
+}
+/* .head_title {
+  font-size: 3.2rem;
+  font-weight: 500;
+  color: var(--color-black);
+} */
+.head_buttons {
+  display: flex;
+  width: 47.2rem;
+  justify-content: space-between;
+}
+.head_arrows__btn {
+  outline: none;
+  border: 1px solid var(--color-primary);
+  background-color: transparent;
+  margin: auto 0.7rem;
+}
+.head_arrow2 {
+  transform: rotate(180deg);
+}
+
+.house {
+  display: flex;
+  overflow: scroll;
+}
+.house::-webkit-scrollbar {
+  display: none;
+}
+.house_container {
+  margin-top: 5rem;
+}
+.house_container:not(:first-child) {
+  margin-left: 3rem;
+}
+.house_card {
+  position: relative;
+}
+.house_card-image {
+  width: 37.6rem;
+  height: 38.2rem;
+  border-radius: 2.4rem;
+}
+.house_card__all {
+  width: 11rem;
+  height: 3.4rem;
+  border-radius: 3.2rem;
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.house_card-title {
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: var(--color-black);
+  margin-top: 2rem;
+  line-height: 200%;
+}
+.house_card-amount {
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--color-grey--3);
+  line-height: 200%;
+}
+.house_owner {
+  display: flex;
+  margin-top: 2rem;
+  align-items: center;
+}
+.house_owner__photo {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+.house_owner__text {
+  margin-left: 2rem;
+}
+.subtitle_center {
+  margin-bottom: 2.2rem;
+  text-align: center;
+}
+.head_center {
+  margin: auto;
+  width: 58rem;
+  text-align: center;
+}
+.review_head {
+  display: flex;
+  width: 150rem;
+
+  overflow: scroll;
+}
+.review_head::-webkit-scrollbar {
+  display: none;
+}
+.review {
+  margin: 2rem;
+  position: relative;
+  height: 50.5rem;
+}
+.review_img {
+  width: 78.4rem;
+  height: 42.9rem;
+  border-radius: 0.8rem;
+}
+.review_text_card {
+  width: 61.2rem;
+  height: 23.2rem;
+  border-radius: 1.6rem;
+  padding: 2.2rem;
+  margin: auto;
+  position: absolute;
+  bottom: -1rem;
+  left: 6rem;
+  background-color: var(--color-white);
+  box-shadow: 0rem 0.8rem 3.2rem #0c153717;
+}
+.review_text-title {
+  margin: 1rem 0rem;
+}
+.review_text_img {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.review_text_star {
+  margin-top: 3rem;
+}
+.review_text_star img {
+  margin-right: 2rem;
+  margin-bottom: -0.5rem;
+}

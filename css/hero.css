@@ -1,0 +1,109 @@
+.titles {
+  flex: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.titles_content {
+  width: 49.6rem;
+  height: 43.8rem;
+  position: relative;
+}
+.title_text {
+  font-size: 4rem;
+  color: var(--color-black);
+  font-family: lexend;
+  margin-bottom: 1.2rem;
+}
+.title_dreams {
+  font-size: 4rem;
+  color: var(--color-primary);
+}
+.title_description {
+  font-weight: 200;
+  color: var(--color-grey--2);
+  margin-bottom: 2.5rem;
+  opacity: 75%;
+}
+.partnership {
+  margin-top: 2.3rem;
+  /* border: 2px solid red; */
+}
+.partnership_logo {
+  margin-right: 1.5rem;
+}
+.search {
+  border: 1px solid #e0e3eb;
+  height: 5.6rem;
+  border-radius: 2.8rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.search_input {
+  width: 30.2rem;
+  height: 2.2rem;
+  border: none;
+  font-size: 1.8rem;
+}
+.search_input:focus {
+  outline: none;
+}
+.recommend {
+  flex: 50%;
+  /* border: 2px solid green; */
+  border-bottom-left-radius: 80px;
+  background-image: url(/images/frontpage.svg);
+  background-size: cover;
+}
+.recommend_section {
+  position: absolute;
+  bottom: 8rem;
+  display: flex;
+  max-width: 71rem;
+  overflow: scroll;
+  margin-left: 3.5rem;
+}
+.recommend_section::-webkit-scrollbar {
+  display: none;
+}
+.recommend__all {
+  display: flex;
+  background-color: white;
+  border-radius: 3.2rem;
+  padding: 1.2rem;
+  flex-shrink: 0;
+  margin-right: 1.2rem;
+}
+.recommend__first {
+  /* border: 2px solid orange; */
+  width: 33.9rem;
+}
+.recommend__second {
+  width: 22.2rem;
+}
+.recommend__third {
+  width: 30.2rem;
+}
+.recommend__text {
+  /* border: 2px solid green; */
+  margin: auto;
+}
+.recommend__text__people {
+  color: var(--color-black);
+}
+.recommend__text__description {
+  font-size: 1.2rem;
+  color: var(--color-grey--2);
+}
+.recommend__photo {
+  border-radius: 50%;
+  border: 3px solid white;
+  margin-right: -3.5rem;
+}
+.recommend__photo:first-child {
+  margin-left: 1.2rem;
+}
+.recommend__photo:last-child {
+  margin-right: 0px;
+}

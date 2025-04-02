@@ -10,36 +10,47 @@
       href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <navbar class="navbar">
+    <header class="navbar" id="navbar">
       <div class="logo">
         <div class="rectangle rectangle-8"></div>
         <div class="rectangle rectangle-9"></div>
         <h3 class="hounter">Hounter</h3>
       </div>
-      <div class="frame-5">
-        <button class="btn">About Us</button>
-        <button class="btn">Article</button>
-        <select name="about" id="property" class="btn">
-          <option value="property">Property</option>
-          <option value="subscribe">Subscribe</option>
-          <option value="tour">Tour</option>
-          <!-- <option value="mercedes">Mercedes</option> -->
-        </select>
-        <button class="btn">Sign Up</button>
-      </div>
-    </navbar>
-    <div class="hero-section">
+      <nav class="nav">
+        <a href="#footer" class="nav_item text-label--regular">About us</a>
+        <a href="#find-more" class="nav_item text-label--regular">Article</a>
+        <div class="dropdown">
+          <a
+            href="#"
+            class="nav_item text-label--regular"
+            style="padding: 1.4rem 2rem"
+          >
+            Property
+            <img src="/images/property_arrow.svg" alt="property_arrow" />
+          </a>
+          <div class="dropdown-content">
+            <a href="#tour" class="dropdown_btn">Tour</a>
+            <a href="#feature" class="dropdown_btn">Feature House</a>
+            <a href="#testimonials" class="dropdown_btn">Testimonials</a>
+          </div>
+        </div>
+        <a href="#form" class="nav_item signup text-label--regular">Sign Up</a>
+      </nav>
+    </header>
+    <div class="hero-section" id="hero-section">
       <div class="titles">
         <div class="titles_content">
           <div class="title">
-            <p class="title_text">
+            <p class="title_text text-body--large">
               Find The Place To Live
-              <span class="title_dreams">Your Dreams</span> Easily Here
+              <span class="title_dreams text-body--large">Your Dreams</span>
+              Easily Here
             </p>
-            <p class="title_description">
+            <p class="title_description text-label--medium">
               Everything you need about finding your place to live will be here,
               where it will be easier for you
             </p>
@@ -58,25 +69,15 @@
             />
             <button class="search_btn">
               Search
-              <span
-                ><svg
-                  width="8"
-                  height="14"
-                  viewBox="0 0 8 14"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  style="margin-left: 1.7rem"
-                >
-                  <path
-                    d="M1.13526 0.00180435C0.87047 0.00134945 0.613858 0.0825443 0.40997 0.231296C0.295217 0.315059 0.200361 0.417933 0.130833 0.534022C0.0613047 0.650112 0.0184714 0.777137 0.00478626 0.907824C-0.0088989 1.03851 0.00683311 1.17029 0.0510809 1.29562C0.0953286 1.42094 0.167222 1.53735 0.262645 1.63818L5.33967 6.98632L0.443969 12.3444C0.349833 12.4465 0.279534 12.5639 0.237114 12.69C0.194694 12.8161 0.180989 12.9482 0.196785 13.079C0.212582 13.2097 0.257569 13.3364 0.329162 13.4518C0.400755 13.5672 0.497541 13.669 0.613958 13.7513C0.731212 13.8421 0.868525 13.9107 1.01728 13.9526C1.16604 13.9945 1.32302 14.0088 1.47838 13.9948C1.63375 13.9807 1.78413 13.9385 1.9201 13.8709C2.05608 13.8032 2.1747 13.7116 2.26853 13.6016L7.7422 7.61492C7.90888 7.43638 8 7.21244 8 6.98133C8 6.75021 7.90888 6.52627 7.7422 6.34773L2.07587 0.361009C1.96218 0.240259 1.81777 0.144807 1.65434 0.0823965C1.49091 0.0199862 1.31308 -0.00762463 1.13526 0.00180435Z"
-                    fill="white"
-                  />
-                </svg>
-              </span>
+              <img
+                src="/images/arrow2.svg"
+                alt="left_arrow"
+                style="margin-left: 1.7rem"
+              />
             </button>
           </div>
           <div class="partnership">
-            <p class="title_description">Our Partnership</p>
+            <p class="title_description text-label--medium">Our Partnership</p>
             <img
               src="/images/traveloka_logo 2.svg"
               alt="traveloka"
@@ -108,22 +109,26 @@
               <img
                 src="/images/avatar1.jpeg"
                 alt="Friend 1"
-                class="recommend__photo"
+                class="recommend__photo icon--xlarge"
               />
               <img
                 src="/images/avatar2.jpeg"
                 alt="Friend 2"
-                class="recommend__photo"
+                class="recommend__photo icon--xlarge"
               />
               <img
                 src="/images/avatar3.jpeg"
                 alt="Friend 3"
-                class="recommend__photo"
+                class="recommend__photo icon--xlarge"
               />
             </div>
             <div class="recommend__text">
-              <p class="recommend__text__people">1K+ People</p>
-              <p class="recommend__text__description">
+              <p
+                class="recommend__text__people text-label--medium text-body--semibold"
+              >
+                1K+ People
+              </p>
+              <p class="recommend__text__description text-body--bold">
                 Successfully Getting Home
               </p>
             </div>
@@ -133,12 +138,18 @@
               <img
                 src="/images/avatar4.png"
                 alt="Friend 4"
-                class="recommend__photo"
+                class="recommend__photo icon--xlarge"
               />
             </div>
             <div class="recommend__text">
-              <p class="recommend__text__people">56 Houses</p>
-              <p class="recommend__text__description">Sold Monthly</p>
+              <p
+                class="recommend__text__people text-label--medium text-body--semibold"
+              >
+                56 Houses
+              </p>
+              <p class="recommend__text__description text-body--bold">
+                Sold Monthly
+              </p>
             </div>
           </div>
           <div class="recommend__all recommend__third">
@@ -146,12 +157,16 @@
               <img
                 src="/images/avatar5.jpeg"
                 alt="Friend 5"
-                class="recommend__photo"
+                class="recommend__photo icon--xlarge"
               />
             </div>
             <div class="recommend__text">
-              <p class="recommend__text__people">4K+</p>
-              <p class="recommend__text__description">
+              <p
+                class="recommend__text__people text-label--medium text-body--semibold"
+              >
+                4K+
+              </p>
+              <p class="recommend__text__description text-body--bold">
                 People Looking for New Homes
               </p>
             </div>
@@ -159,49 +174,58 @@
         </div>
       </div>
     </div>
-    <div class="featured-house">
+    <div class="featured-house" id="feature">
       <div class="subtitle">Our Recommendation</div>
       <div class="head">
         <div class="head_title">Featured House</div>
         <div class="head_buttons">
-          <button class="head_btn">
+          <button
+            class="search_btn head_btn text-label--medium"
+            data-category="home"
+          >
             <img src="/images/house.svg" alt="house" /> <span>House</span>
           </button>
-          <button class="head_btn">
+          <button
+            class="search_btn head_btn text-label--medium"
+            data-category="villa"
+          >
             <img src="/images/villa.svg" alt="villa" /><span>Villa</span>
           </button>
-          <button class="head_btn">
-            <img src="/images/apartment.svg" alt="house" /><span
+          <button
+            class="search_btn head_btn text-label--medium"
+            data-category="apartment"
+          >
+            <img src="/images/apartment.svg" alt="apartment" /><span
               >Apartment</span
             >
           </button>
         </div>
         <div class="head_arrows">
-          <button class="head_arrows__btn">
+          <button class="head_arrows__btn slider__btn--left btn--rounded">
             <img src="/images/arrow1.svg" alt="arrow1" /></button
-          ><button class="head_arrows__btn">
-            <img src="/images/arrow2.svg" alt="arrow2" />
+          ><button class="head_arrows__btn slider__btn--right btn--rounded">
+            <img src="/images/arrow1.svg" alt="arrow2" class="head_arrow2" />
           </button>
         </div>
       </div>
-      <div class="house">
-        <div class="house_container">
+      <div class="house slider">
+        <div class="house_container" data-category="home">
           <div class="house_card">
             <img
               src="/images/house1.jpeg"
               alt="House card 1"
               class="house_card-image"
             />
-            <div class="house_card__title1 house_card__all">
+            <div class="btn-filled--danger house_card__all">
               <img
                 src="/images/popular.svg"
                 alt="best deal"
                 class="house_card__title__icon"
               />
-              <div class="house_card_text">Popular</div>
+              <div class="house_card_text text-label--regular">Popular</div>
             </div>
           </div>
-          <h4 class="house_card-title">Roselands House</h4>
+          <h3 class="house_card-title h-3">Roselands House</h3>
           <p class="house_card-amount">$ 35.000.000</p>
           <div class="house_owner">
             <div class="house_owner_image">
@@ -212,28 +236,32 @@
               />
             </div>
             <div class="house_owner__text">
-              <p class="house_owner__text__title">Dianne Russell</p>
-              <p class="house_owner__text__description">Manchester, Kentucky</p>
+              <p class="text-dark text-body--medium text-label--large">
+                Dianne Russell
+              </p>
+              <p class="text-label--regular text-body--bold text--grey-light-2">
+                Manchester, Kentucky
+              </p>
             </div>
           </div>
         </div>
-        <div class="house_container">
+        <div class="house_container" data-category="villa">
           <div class="house_card">
             <img
               src="/images/house2.jpeg"
               alt="House card 1"
               class="house_card-image"
             />
-            <div class="house_card__title2 house_card__all">
+            <div class="btn-filled--info house_card__all">
               <img
                 src="/images/home.svg"
                 alt="best deal"
                 class="house_card__title__icon"
               />
-              <div class="house_card_text">New Home</div>
+              <div class="house_card_text text-label--regular">New Home</div>
             </div>
           </div>
-          <h4 class="house_card-title">Woodlandside</h4>
+          <h3 class="house_card-title h-3">Woodlandside</h3>
           <p class="house_card-amount">$ 20.000.000</p>
           <div class="house_owner">
             <div class="house_owner_image">
@@ -244,30 +272,32 @@
               />
             </div>
             <div class="house_owner__text">
-              <p class="house_owner__text__title">Robert Fox</p>
-              <p class="house_owner__text__description">
+              <p class="text-dark text-body--medium text-label--large">
+                Robert Fox
+              </p>
+              <p class="text-label--regular text-body--bold text--grey-light-2">
                 Dr. San Jose, South Dakota
               </p>
             </div>
           </div>
         </div>
-        <div class="house_container">
+        <div class="house_container" data-category="apartment">
           <div class="house_card">
             <img
               src="/images/house3.jpeg"
               alt="House card 1"
               class="house_card-image"
             />
-            <div class="house_card__title3 house_card__all">
+            <div class="btn-filled--success house_card__all">
               <img
                 src="/images/bestDeals.svg"
                 alt="best deal"
                 class="house_card__title__icon"
               />
-              <div class="house_card_text">Best Deal</div>
+              <div class="house_card_text text-label--regular">Best Deal</div>
             </div>
           </div>
-          <h4 class="house_card-title">The Old Lighthouse</h4>
+          <h3 class="house_card-title h-3">The Old Lighthouse</h3>
           <p class="house_card-amount">$ 44.000.000</p>
           <div class="house_owner">
             <div class="house_owner_image">
@@ -278,28 +308,32 @@
               />
             </div>
             <div class="house_owner__text">
-              <p class="house_owner__text__title">Ronald Richards</p>
-              <p class="house_owner__text__description">Santa Ana, Illinois</p>
+              <p class="text-dark text-body--medium text-label--large">
+                Ronald Richards
+              </p>
+              <p class="text-label--regular text-body--bold text--grey-light-2">
+                Santa Ana, Illinois
+              </p>
             </div>
           </div>
         </div>
-        <div class="house_container">
+        <div class="house_container" data-category="home">
           <div class="house_card">
             <img
               src="/images/house4.jpeg"
               alt="House card 1"
               class="house_card-image"
             />
-            <div class="house_card__title1 house_card__all">
+            <div class="btn-filled--danger house_card__all">
               <img
                 src="/images/popular.svg"
                 alt="best deal"
                 class="house_card__title__icon"
               />
-              <div class="house_card_text">Popular</div>
+              <div class="house_card_text text-label--regular">Popular</div>
             </div>
           </div>
-          <h4 class="house_card-title">Cosmo's House</h4>
+          <h3 class="house_card-title h-3">Cosmo's House</h3>
           <p class="house_card-amount">$ 22.000.000</p>
           <div class="house_owner">
             <div class="house_owner_image">
@@ -310,8 +344,10 @@
               />
             </div>
             <div class="house_owner__text">
-              <p class="house_owner__text__title">Jenny Wilson</p>
-              <p class="house_owner__text__description">
+              <p class="text-dark text-body--medium text-label--large">
+                Jenny Wilson
+              </p>
+              <p class="text-label--regular text-body--bold text--grey-light-2">
                 Preston Rd. Inglewood, Maine 98380
               </p>
             </div>
@@ -319,7 +355,7 @@
         </div>
       </div>
     </div>
-    <div class="tour">
+    <div class="tour" id="tour">
       <div class="tour__info">
         <div class="subtitle">Ready to Sell!</div>
         <div class="head_title">Let’s Tour And See Our House!</div>
@@ -327,23 +363,41 @@
           Houses recommended by our partners that have been curated to become
           the home of your dreams!
         </p>
-        <div class="tour_house_details">House Details</div>
+        <div class="text-dark text-label--medium text-body--bold">
+          House Details
+        </div>
         <div class="tour_details">
           <div class="bedrooms tour_details__block">
             <img src="/images/bedrooms.svg" alt="Bedrooms" />
-            <div class="tour_details__text">4 Bedrooms</div>
+            <div
+              class="tour_details__text text-label--medium text-body--bold text--grey-light-2"
+            >
+              4 Bedrooms
+            </div>
           </div>
           <div class="bathrooms tour_details__block">
             <img src="/images/bathrooms.svg" alt="Bathrooms" />
-            <div class="tour_details__text">2 Bathrooms</div>
+            <div
+              class="tour_details__text text-label--medium text-body--bold text--grey-light-2"
+            >
+              2 Bathrooms
+            </div>
           </div>
           <div class="carport tour_details__block">
             <img src="/images/carport.svg" alt="carport" />
-            <div class="tour_details__text">1 Carport</div>
+            <div
+              class="tour_details__text text-label--medium text-body--bold text--grey-light-2"
+            >
+              1 Carport
+            </div>
           </div>
           <div class="floors tour_details__block">
             <img src="/images/floors.svg" alt="Floors" />
-            <div class="tour_details__text">2 Floors</div>
+            <div
+              class="tour_details__text text-label--medium text-body--bold text--grey-light-2"
+            >
+              2 Floors
+            </div>
           </div>
         </div>
         <div class="tour_line"></div>
@@ -357,22 +411,560 @@
               />
             </div>
             <div class="house_owner__text">
-              <p class="house_owner__text__title">Dianne Russell</p>
-              <p class="house_owner__text__description">Manchester, Kentucky</p>
+              <p class="text-dark text-body--medium text-label--large">
+                Dianne Russell
+              </p>
+              <p class="text-label--regular text-body--bold text--grey-light-2">
+                Manchester, Kentucky
+              </p>
             </div>
           </div>
-          <button class="search_btn contact_btn">
+          <button class="btn search_btn contact_btn">
             <img src="/images/contact.svg" alt="contact now" />
-            <span>Contact Now</span>
+            <span class="text-label--medium">Contact Now</span>
           </button>
         </div>
       </div>
-      <div class="tour__imgs"></div>
+      <div class="tour__imgs">
+        <div class="grid-container">
+          <img src="/images/tour_img1.png" class="main-image tour__img" />
+          <img src="/images/tour_img3.png" class="sofa tour__img" />
+          <img src="/images/tour_img3.jpg" class="decor tour__img" />
+          <img src="/images/tour_img4.jpg" class="chair tour__img" />
+        </div>
+        <div class="start-button">
+          <div class="triangle-right"></div>
+        </div>
+      </div>
     </div>
-    <div class="testimonials"></div>
-    <div class="find-more"></div>
-    <div class="subscribe"></div>
-    <div class="form"></div>
-    <footer class="footer"></footer>
+    <div class="testimonials" id="testimonials">
+      <div class="subtitle subtitle_center">See Our Review</div>
+      <div class="head_title head_center">What Our User Say About Us</div>
+      <div class="review_head">
+        <div class="review slide">
+          <img src="/images/review1.jpg" alt="Review1" class="review_img" />
+          <div class="review_text_card">
+            <div class="review_text">
+              <h4 class="review_text-title h-4 text-body--bold text-dark">
+                Through the Hounter, I can get a house for my self
+              </h4>
+              <p class="text-label--regular text-body--bold text--grey-light-3">
+                By looking for information about what kind of house we want, we
+                managed to get the house we wanted very quickly, and directly
+                connected with the seller to be able to ask about the details,
+                very helpful!
+              </p>
+              <div class="review_text_img">
+                <div class="house_owner">
+                  <div class="house_owner_image">
+                    <img
+                      src="/images/houseperson3.jpeg"
+                      alt="Friend 4"
+                      class="icon--owner"
+                    />
+                  </div>
+                  <div class="house_owner__text">
+                    <p class="text-dark text-body--medium text-label--medium">
+                      Jenny Wilson
+                    </p>
+                    <p
+                      class="text-label--regular text-body--bold text--grey-light-2"
+                    >
+                      Manager Director
+                    </p>
+                  </div>
+                </div>
+                <div class="review_text_star">
+                  <img src="/images/star.svg" alt="star" />
+                  <span class="h-4 text-body--bold text-dark"> 4.3 </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="review slide">
+          <img src="/images/review2.jpg" alt="Review2" class="review_img" />
+          <div class="review_text_card">
+            <div class="review_text">
+              <h4 class="review_text-title h-4 text-body--bold text-dark">
+                My House Sold Out Fast!
+              </h4>
+              <p class="text-label--regular text-body--bold text--grey-light-3">
+                I was finally able to sell my house quickly through Hounter by
+                immediately setting me up with people who wanted my house. I
+                also do not get a discount from the sale of my house. Awesome!
+              </p>
+              <div class="review_text_img">
+                <div class="house_owner">
+                  <div class="house_owner_image">
+                    <img
+                      src="/images/houseperson1.jpeg"
+                      alt="Friend 4"
+                      class="icon--owner"
+                    />
+                  </div>
+                  <div class="house_owner__text">
+                    <p class="text-dark text-body--medium text-label--medium">
+                      Dianne Russell
+                    </p>
+                    <p
+                      class="text-label--regular text-body--bold text--grey-light-2"
+                    >
+                      Manchester, Kentucky
+                    </p>
+                  </div>
+                </div>
+                <div class="review_text_star">
+                  <img src="/images/star.svg" alt="star" />
+                  <span class="h-4 text-body--bold text-dark"> 4.5 </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="review slide">
+          <img src="/images/review3.jpg" alt="Review3" class="review_img" />
+          <div class="review_text_card">
+            <div class="review_text h-4 text-body--bold text-dark">
+              <h4 class="review_text-title h-4 text-body--bold text-dark">
+                Best! I Got The House I Wanted Through Hounter
+              </h4>
+              <p class="text-label--regular text-body--bold text--grey-light-3">
+                Through this website I can get a house with the type and
+                specifications I want very easily, without a complicated process
+                to be able to find information on the house we want.
+              </p>
+              <div class="review_text_img">
+                <div class="house_owner">
+                  <div class="house_owner_image">
+                    <img
+                      src="/images/houseperson4.jpeg"
+                      alt="Friend 4"
+                      class="icon--owner"
+                    />
+                  </div>
+                  <div class="house_owner__text">
+                    <p class="text-dark text-body--medium text-label--medium">
+                      Jenny Wilson
+                    </p>
+                    <p
+                      class="text-label--regular text-body--bold text--grey-light-2"
+                    >
+                      Manager Director
+                    </p>
+                  </div>
+                </div>
+                <div class="review_text_star">
+                  <img src="/images/star.svg" alt="star" />
+                  <span class="h-4 text-body--bold text-dark"> 4.6 </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dots"></div>
+    </div>
+    <div class="find-more" id="find-more">
+      <div class="subtitle subtitle_center">
+        See tips and trick from our partnership
+      </div>
+      <div class="head_title head_center">
+        Find out more about selling and buying homes
+      </div>
+      <div class="more_articles">
+        <button class="search_btn more_articles_btn text-label--medium">
+          More Articles
+        </button>
+      </div>
+      <div class="find-more-head">
+        <div class="find-more--1">
+          <div class="article_section-1" data-id="1">
+            <img
+              src="/images/article1.jpeg"
+              alt="article 1"
+              class="article_section1-img"
+            />
+            <div class="article_section1-text">
+              <div class="article_owner">
+                <div class="article_owner_name">
+                  <img
+                    src="/images/houseperson1.jpeg"
+                    alt="houseperson1"
+                    class="article_owner_img icon--large"
+                  />
+                  <span
+                    class="article_owner_title text-label--regular text-body--bold text--grey-light-3"
+                    >Diana Russell</span
+                  >
+                </div>
+                <h4
+                  class="article-owner-description text-dark text-body--bold text-label--large"
+                >
+                  The things we need to check when we want to buy a house
+                </h4>
+                <div class="article_overview">
+                  <img src="/images/timeIcon.svg" alt="time Icon" />
+                  <span
+                    class="article_overview-text text-label--regular text-body--bold text--grey-light-2"
+                    >4 min read | 25 Apr 2021
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="article_section-1" data-id="2">
+            <img
+              src="/images/article2.jpeg"
+              alt="article 1"
+              class="article_section1-img"
+            />
+            <div class="article_section1-text">
+              <div class="article_owner">
+                <div class="article_owner_name">
+                  <img
+                    src="/images/houseperson2.jpeg"
+                    alt="houseperson1"
+                    class="article_owner_img icon--large"
+                  />
+                  <span
+                    class="article_owner_title text-label--regular text-body--bold text--grey-light-3"
+                    >Courtney Henry</span
+                  >
+                </div>
+                <h4
+                  class="article-owner-description text-dark text-body--bold text-label--large"
+                >
+                  7 Ways to distinguish the quality of the house we want to buy
+                </h4>
+                <div class="article_overview">
+                  <img src="/images/timeIcon.svg" alt="time Icon" />
+                  <span
+                    class="article_overview-text text-label--regular text-body--bold text--grey-light-2"
+                    >6 min read | 24 Apr 2021
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="article_section-1" data-id="3">
+            <img
+              src="/images/article3.jpeg"
+              alt="article 1"
+              class="article_section1-img"
+            />
+            <div class="article_section1-text">
+              <div class="article_owner">
+                <div class="article_owner_name">
+                  <img
+                    src="/images/houseperson3.jpeg"
+                    alt="houseperson1"
+                    class="article_owner_img icon--large"
+                  />
+                  <span
+                    class="article_owner_title text-label--regular text-body--bold text--grey-light-3"
+                    >Darlene Robertson</span
+                  >
+                </div>
+                <h4
+                  class="article-owner-description text-dark text-body--bold text-label--large"
+                >
+                  The best way to know the quality of the house we want to buy
+                </h4>
+                <div class="article_overview">
+                  <img src="/images/timeIcon.svg" alt="time Icon" />
+                  <span
+                    class="article_overview-text text-label--regular text-body--bold text--grey-light-2"
+                    >2 min read | 24 Apr 2021
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="find-more--2">
+          <img
+            src="/images/article_main.jpeg"
+            alt="article Main"
+            class="article_main_img"
+          />
+          <div class="article_owner_name">
+            <img
+              src="/images/houseperson4.jpeg"
+              alt="houseperson1"
+              class="article_owner_img icon--large article_owner_img-find--2"
+            />
+            <span
+              class="article_owner_title text-label--regular text-body--bold text--grey-light-3 article_owner_title-find--2"
+              >Cameron Williamson</span
+            >
+          </div>
+          <h4
+            class="text-dark text-body--bold text-label--large review_text-title-find--2"
+          >
+            12 Things to know before buying a house
+          </h4>
+          <p
+            class="article_main_description text-label--medium text-body--bold text--grey-light-3"
+          >
+            Want to buy a house but are unsure about what we should know, here I
+            will try to explain what we should know and check when we want to
+            buy a house
+          </p>
+          <div class="article_overview">
+            <img src="/images/timeIcon.svg" alt="time Icon" />
+            <span
+              class="article_overview-text text-label--regular text-body--bold text--grey-light-2 article_overview-text-find--2"
+              >2 min read | 24 Apr 2021
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="subscribe" id="subscribe">
+      <div class="head_title subs_heading">
+        Subscribe For More Info and update from Hounter
+      </div>
+      <div class="search subs_search">
+        <img src="/images/subs_img.svg" alt="Email" class="search_location" />
+        <input
+          class="search_input text-label--regular"
+          type="text"
+          placeholder="Your email here"
+          name="search input"
+        />
+        <button class="search_btn">Search</button>
+      </div>
+      <img
+        src="images/subscribe1.jpeg"
+        alt="subscribe 1"
+        class="subs_house--1 subs_floating"
+      />
+
+      <img
+        src="images/subscribe2.jpeg"
+        alt="subscribe 2"
+        class="subs_house--3 subs_floating"
+      />
+      <img
+        src="images/subscribe3.jpeg"
+        alt="subscribe 3"
+        class="subs_house--2 subs_floating"
+      />
+      <img
+        src="images/subscribe4.jpeg"
+        alt="subscribe 4"
+        class="subs_house--3 subs_floating"
+      />
+      <img
+        src="/images/houseperson1.jpeg"
+        alt="Subscribe person1"
+        class="subs_people subs_floating"
+      />
+      <img
+        src="/images/houseperson2.jpeg"
+        alt="person2"
+        class="subs_people subs_floating"
+      />
+      <img
+        src="/images/houseperson3.jpeg"
+        alt="person3"
+        class="subs_people subs_floating"
+      />
+      <img
+        src="/images/houseperson4.jpeg"
+        alt="person4"
+        class="subs_people subs_floating"
+      />
+    </div>
+    <div class="form-section" id="form">
+      <div class="form-content--1">
+        <h4 class="house_card-title form-h4-text h-4">
+          Would you like to join?
+        </h4>
+        <div class="form-all-text">
+          <p class="text-description text-label--medium text--grey-light-2">
+            Quickly get three quotes from these local that people love in online
+            reviews.
+          </p>
+          <div class="form-content--line"></div>
+          <p class="text-description text-label--medium text--grey-light-2">
+            Pick the whose estimate suits you best.
+          </p>
+          <div class="form-content--line"></div>
+          <p class="text-description text-label--medium text--grey-light-2">
+            We then make sure the work i done to your complete satisfaction.
+          </p>
+        </div>
+        <div class="create--img">
+          <img src="/images/create.jpg" alt="Create" />
+        </div>
+      </div>
+      <div class="form-content--2">
+        <form class="form">
+          <div class="field">
+            <label for="name" class="text-label--regular">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your name"
+              class="inputing"
+            />
+          </div>
+
+          <div class="field">
+            <label for="surname" class="text-label--regular">Surname</label>
+            <input
+              type="text"
+              id="surname"
+              name="surname"
+              placeholder="Your Surname"
+              class="inputing"
+            />
+          </div>
+          <div class="field">
+            <label for="education" class="text-label--regular">Education</label>
+            <div class="custom-select selecting">
+              <div class="select-toggle">
+                <span id="chosen-option">Select an option</span>
+                <span class="arrow-icon">▼</span>
+              </div>
+              <ul class="select-menu">
+                <li class="selecting" data-value="option1">Schooling</li>
+                <li class="selecting" data-value="option1">Bachelor Degree</li>
+                <li class="selecting" data-value="option2">Master Degree</li>
+                <li class="selecting" data-value="option3">Ph.d</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="field field_textarea">
+            <label for="message" class="text-label--regular">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Message"
+              class="textareas"
+              maxlength="500"
+              oninput="updateLength()"
+            ></textarea>
+            <div class="textarea--msg">
+              <span
+                class="textarea--length text-label--regular text-body--bold text--grey-light-2"
+                >0</span
+              ><span
+                class="text-label--regular text-body--bold text--grey-light-2"
+                >/500</span
+              >
+            </div>
+          </div>
+
+          <div class="checkbox">
+            <input type="checkbox" id="consent" name="consent" class="input" />
+            <label
+              for="consent"
+              class="text-label--regular text-body--bold text--grey-light-2 checkbox_label"
+            >
+              I give consent to the processing of my personal data under the
+              terms and conditions of Grid Dynamics Privacy Policy.
+            </label>
+          </div>
+        </form>
+      </div>
+    </div>
+    <footer class="footer" id="footer">
+      <div class="footer-content">
+        <div class="footer-content--1">
+          <div class="logo">
+            <div class="rectangle rectangle-8"></div>
+            <div class="rectangle rectangle-9"></div>
+            <h3 class="hounter">Hounter</h3>
+          </div>
+          <p
+            class="text-label--regular text-body--bold text--grey-light-3"
+            style="width: 37.6rem"
+          >
+            We provide information about properties such as houses, villas and
+            apartments to help people find their dream home
+          </p>
+          <div class="footer-content--1__icons">
+            <img src="/images/FB.jpg" alt="Facebook" />
+            <img src="/images/TW.jpg" alt="Twitter" />
+            <img src="/images/PIN.png" alt="Pintest" />
+          </div>
+        </div>
+        <div class="footer-content--2">
+          <h4
+            class="text-label--large text-dark text-body--bold footer-content--title"
+          >
+            Property
+          </h4>
+          <ul class="footer-content--text">
+            <li class="text-label--regular text-body--bold text--grey-light-3">
+              House
+            </li>
+            <li class="text-label--regular text-body--bold text--grey-light-3">
+              Villa
+            </li>
+            <li class="text-label--regular text-body--bold text--grey-light-3">
+              Apartment
+            </li>
+          </ul>
+        </div>
+        <div class="footer-content--3">
+          <h4
+            class="text-label--large text-dark text-body--bold footer-content--title"
+          >
+            Article
+          </h4>
+          <ul class="footer-content--text">
+            <li class="text-label--regular text-body--bold text--grey-light-3">
+              New Article
+            </li>
+            <li class="text-label--regular text-body--bold text--grey-light-3">
+              Popular Article
+            </li>
+            <li class="text-label--regular text-body--bold text--grey-light-3">
+              Most Read
+            </li>
+            <li class="text-label--regular text-body--bold text--grey-light-3">
+              Tips & Tricks
+            </li>
+          </ul>
+        </div>
+        <div class="footer-content--4">
+          <h4
+            class="text-label--large text-dark text-body--bold footer-content--title"
+          >
+            Contact
+          </h4>
+          <ul class="footer-content--text">
+            <li class="text-label--regular text-body--bold text--grey-light-3">
+              2464 Royal Ln. Mesa, New Jersey 45463
+            </li>
+            <li class="text-label--regular text-body--bold text--grey-light-3">
+              (671) 555-0110
+            </li>
+            <li class="text-label--regular text-body--bold text--grey-light-3">
+              info@hounter.com
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-cookie">
+        <div class="footer-cookie-text">
+          <img src="/images/icon-cookies.svg" alt="cookies" />
+          <p class="text-label--medium text-body--semibold text-green--dark">
+            We are using cookies
+          </p>
+        </div>
+        <div class="cookie-icon">
+          <button class="close"></button>
+        </div>
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
   </body>
 </html>

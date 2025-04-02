@@ -1,0 +1,56 @@
+.btn {
+  border: none;
+  padding: 1.2rem 2.4rem;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  letter-spacing: 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+}
+.search_btn {
+  background-color: var(--color-primary);
+  width: 15rem;
+  height: 4.8rem;
+  border-radius: 10rem;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  padding: 0.4rem 0.4rem 0.4rem 0.4rem;
+  cursor: pointer;
+}
+.head_btn {
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--color-primary);
+  padding: 1.2rem 2.4rem;
+}
+.head_btn:hover,
+.head_arrows__btn:hover {
+  background-color: var(--color-primary-light);
+}
+.contact_btn {
+  width: 17.1rem;
+  margin-top: 2.2rem;
+  margin-right: 2.2rem;
+  font-weight: 500;
+}
+.start-button {
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  background-color: var(--color-grey--1);
+  cursor: pointer;
+}
+.more_articles_btn {
+  margin-top: 1.2rem;
+  width: 13rem;
+}

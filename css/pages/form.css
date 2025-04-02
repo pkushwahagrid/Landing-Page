@@ -1,0 +1,139 @@
+.form-all-text {
+  width: 39.8rem;
+  margin: auto;
+}
+.form-h4-text {
+  text-align: center;
+  margin-bottom: 2.4rem;
+}
+.form-content--line {
+  height: 2px;
+  width: 4rem;
+  margin: auto;
+  margin-bottom: 2.4rem;
+  background-color: var(--color-primary);
+}
+.create--img {
+  margin-top: 4.4rem;
+  text-align: center;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 3rem;
+  border-radius: 8px;
+}
+
+.field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.inputing,
+.selecting,
+.textareas {
+  padding: 1.6rem 2.4rem;
+  border: 1px solid var(--color-grey--1);
+  border-radius: 2.8rem;
+  width: 49.6rem;
+  font-size: 1.4rem;
+  outline: none;
+  color: var(--color-grey--2);
+}
+.textareas {
+  height: 14.4rem;
+}
+.field_textarea {
+  position: relative;
+}
+.textarea--msg {
+  position: absolute;
+  /* border: 2px solid red; */
+  bottom: 1rem;
+  right: 3rem;
+}
+.checkbox {
+  margin: auto;
+  display: flex;
+  gap: 1rem;
+}
+.checkbox_label {
+  display: inline-block;
+  width: 36.4rem;
+  /* border: 2px solid red; */
+}
+.input[type="checkbox"] {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  border: 1px solid var(--color-primary);
+  border-radius: 3px;
+  background-color: var(--color-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+.input[type="checkbox"]:checked {
+  background-color: var(--color-primary);
+}
+.input[type="checkbox"]:checked::after {
+  content: "\002714";
+  font-size: 1.6rem;
+  width: 2rem;
+  height: 2rem;
+  color: var(--color-white);
+  display: block;
+  text-align: center;
+  line-height: 2rem;
+  background-color: var(--color-primary);
+}
+.custom-select {
+  position: relative;
+}
+.select-toggle {
+  color: var(--color-grey--2);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.select-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 49.6rem;
+  background: var(--color-white);
+  border: 1px solid var(--color-grey--1);
+  border-radius: 1rem;
+  box-shadow: 0rem 0.8rem 3.2rem #0c153717;
+  display: none;
+  list-style: none;
+  padding: 0;
+  z-index: 10;
+  color: var(--color-grey--2);
+}
+.select-menu li {
+  border-radius: 1rem;
+  border: none;
+}
+.select-menu li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.select-menu li:hover {
+  background: var(--color-grey--1);
+  outline: none;
+  border-radius: 1rem;
+}
+.arrow-icon {
+  margin-left: auto;
+  transition: transform 0.2s;
+}
+.custom-select.active .select-menu {
+  display: block;
+}
+.custom-select.active .arrow-icon {
+  transform: rotate(180deg);
+}

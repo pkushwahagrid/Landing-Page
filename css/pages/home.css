@@ -1,0 +1,118 @@
+.navbar {
+  height: 12.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 10;
+  padding: 0rem 13rem;
+}
+.hero-section {
+  position: relative;
+  top: -12.7rem;
+  height: 72rem;
+  background: linear-gradient(to bottom right, #82ffd25c 20%, white 30%);
+  display: flex;
+}
+.featured-house {
+  height: 65.5rem;
+  padding: 8rem 15rem;
+  position: relative;
+  top: -12.6rem;
+  z-index: 10;
+}
+.tour {
+  height: 45.9rem;
+  position: relative;
+  top: 4.3rem;
+  display: flex;
+  padding: 0rem 15rem;
+  margin-top: 4.5rem;
+  gap: 8rem;
+}
+.tour::before {
+  content: "";
+  /* background: url("/images/Blur-BG.svg"); */
+  background: linear-gradient(to bottom right, #ff9882, #fffa82);
+  position: absolute;
+  width: 40rem;
+  height: 70rem;
+  right: 0rem;
+  filter: blur(3.1rem);
+  opacity: 0.3;
+  top: -46rem;
+  border-radius: 50%;
+}
+.tour__info {
+  margin-top: 4.2rem;
+  flex: 50%;
+}
+.tour__imgs {
+  flex: 50%;
+  margin-left: 3.2rem;
+  position: relative;
+}
+.testimonials {
+  height: 68.2rem;
+  top: 12rem;
+  position: relative;
+}
+.find-more {
+  padding: 4rem 0rem;
+  position: relative;
+  top: 12rem;
+}
+.find-more::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 33.2rem;
+  height: 57.5rem;
+  top: 4rem;
+  background: linear-gradient(to bottom right, #82ffe8, #cde672);
+  filter: blur(4rem);
+  opacity: 0.3;
+  /* background: url("/images/gradient.jpg"); */
+}
+.find-more-head {
+  padding: 0rem 10rem;
+  display: flex;
+}
+.find-more--1 {
+  flex: 50%;
+  padding: 2rem;
+  overflow: scroll;
+  height: 50.8rem;
+}
+.find-more--1::-webkit-scrollbar {
+  display: none;
+}
+.find-more--2 {
+  flex: 50%;
+  padding: 2rem;
+}
+.subscribe {
+  height: 31.2rem;
+  background: url("/images/susbcribe_bg.jpg");
+  background-size: cover;
+  margin: 5rem 13rem;
+  border-radius: 2.4rem;
+  position: relative;
+  top: 12rem;
+}
+.form-section {
+  height: 59.2rem;
+  display: flex;
+  padding: 0rem 13rem;
+  gap: 3.2rem;
+  position: relative;
+  top: 12rem;
+}
+.form-content--1 {
+  flex: 45%;
+  box-shadow: 0rem 0.8rem 3.2rem #0c153717;
+}
+.form-content--2 {
+  flex: 55%;
+  box-shadow: 0rem 0.8rem 3.2rem #0c153717;
+}
