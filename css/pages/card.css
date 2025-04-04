@@ -3,11 +3,6 @@
   display: flex;
   justify-content: space-between;
 }
-/* .head_title {
-  font-size: 3.2rem;
-  font-weight: 500;
-  color: var(--color-black);
-} */
 .head_buttons {
   display: flex;
   width: 47.2rem;
@@ -22,7 +17,9 @@
 .head_arrow2 {
   transform: rotate(180deg);
 }
-
+.active {
+  background-color: var(--color-primary-light);
+}
 .house {
   display: flex;
   overflow: scroll;

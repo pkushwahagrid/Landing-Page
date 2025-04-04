@@ -168,13 +168,13 @@ const selectMenu = document.querySelector(".select-menu");
 const chosenOption = document.getElementById("chosen-option");
 
 selectToggle.addEventListener("click", () => {
-  customSelect.classList.toggle("active");
+  customSelect.classList.toggle("select-active");
 });
 
 document.querySelectorAll(".select-menu li").forEach((item) => {
   item.addEventListener("click", function () {
     chosenOption.textContent = this.textContent;
-    customSelect.classList.remove("active");
+    customSelect.classList.remove("select-active");
   });
 });
 
@@ -182,7 +182,7 @@ document.querySelectorAll(".select-menu li").forEach((item) => {
 document.addEventListener("click", (e) => {
   console.log(e.target);
   if (!customSelect.contains(e.target)) {
-    customSelect.classList.remove("active");
+    customSelect.classList.remove("select-active");
   }
 });
 // cookies
