@@ -10,7 +10,7 @@
   --color-primary: #10b981;
   --color-primary-dark: #0b9567;
   --color-primary-light: #d1fae5;
-  --color-secondary: #f59e0b;
+  --color-secondary: #d97706;
   --color-black: #1b1c57;
   --color-danger: #ef4444;
   --color-danger-light: #fee2e2;
@@ -19,8 +19,8 @@
   --color-black-light: #3c4563;
   --color-white: #ffffff;
   --color-grey--1: #e0e3eb;
-  --color-grey--2: #888b97;
-  --color-grey--3: #626687;
+  --color-grey--2: #6b6e7a;
+  --color-grey--3: #4a4d5a;
 }
 
 html {

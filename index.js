@@ -82,9 +82,10 @@ const dotContainer = document.querySelector(".dots");
 //insert adjacent element
 const createDots = () => {
   slides.forEach((_, i) => {
+    const isActive = i === 0 ? 'true' : 'false';
     dotContainer.insertAdjacentHTML(
       "beforeend",
-      `<button class="dots__dot" data-slide="${i}"></button>`
+      `<button class="dots__dot" data-slide="${i}" aria-label="Go to review ${i + 1}" aria-pressed="${isActive}"></button>`
     );
   });
 };
@@ -103,11 +104,16 @@ const gotoSlide = (curr) => {
 const activeDots = (slide) => {
   document
     .querySelectorAll(".dots__dot")
-    .forEach((dot) => dot.classList.remove("dots__dot--active"));
+    .forEach((dot) => {
+      dot.classList.remove("dots__dot--active");
+      dot.setAttribute("aria-pressed", "false");
+    });
   //now set active to curr slide element
-  document
-    .querySelector(`.dots__dot[data-slide='${slide}']`)
-    .classList.add("dots__dot--active");
+  const activeDot = document.querySelector(`.dots__dot[data-slide='${slide}']`);
+  if (activeDot) {
+    activeDot.classList.add("dots__dot--active");
+    activeDot.setAttribute("aria-pressed", "true");
+  }
 };
 dotContainer.addEventListener("click", (e) => {
   if (e.target.classList.contains("dots__dot")) {

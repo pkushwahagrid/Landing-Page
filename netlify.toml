@@ -1,0 +1,10 @@
+# Netlify configuration file
+[build]
+  publish = "."
+
+# Remove noindex header for production
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Robots-Tag = "index, follow"
+

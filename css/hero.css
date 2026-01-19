@@ -23,7 +23,6 @@
   font-weight: 200;
   color: var(--color-grey--2);
   margin-bottom: 2.5rem;
-  opacity: 75%;
 }
 .partnership {
   margin-top: 2.3rem;
@@ -100,6 +99,7 @@
   border-radius: 50%;
   border: 3px solid white;
   margin-right: -3.5rem;
+  object-fit: cover;
 }
 .recommend__photo:first-child {
   margin-left: 1.2rem;

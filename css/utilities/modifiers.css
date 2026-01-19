@@ -145,15 +145,18 @@
   width: 3.2rem;
   height: 3.2rem;
   border-radius: 50%;
+  object-fit: cover;
 }
 .icon--xlarge {
   width: 5.6rem;
   height: 5.6rem;
+  object-fit: cover;
 }
 .icon--owner {
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
+  object-fit: cover;
 }
 .icon--black {
   fill: var(--color-black);
@@ -163,14 +166,14 @@
   fill: var(--color-info);
 }
 .subtitle {
-  color: #f59e0b;
+  color: #d97706;
   font-size: 1.4rem;
   font-weight: 300;
   margin-bottom: 1.2rem;
 }
 .subtitle::before {
   content: "";
-  border-top: 1px solid #f59e0b;
+  border-top: 1px solid #d97706;
   display: inline-block;
   width: 3.2rem;
   height: 1rem;
