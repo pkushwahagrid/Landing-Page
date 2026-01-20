@@ -93,7 +93,7 @@
 }
 .subscribe {
   height: 31.2rem;
-  background: url("/images/susbcribe_bg.jpg");
+  background: url("https://res.cloudinary.com/dtrrzumju/image/upload/v1768890589/susbcribe_bg");
   background-size: cover;
   margin: 5rem 13rem;
   border-radius: 2.4rem;

@@ -52,7 +52,7 @@
   flex: 50%;
   /* border: 2px solid green; */
   border-bottom-left-radius: 80px;
-  background-image: url(/images/frontpage.svg);
+  background-image: url("https://res.cloudinary.com/dtrrzumju/image/upload/v1768890587/frontpage_c73a6m.svg");
   background-size: cover;
 }
 .recommend_section {
