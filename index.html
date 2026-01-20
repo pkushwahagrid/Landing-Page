@@ -8,6 +8,10 @@
     <title>Hounter - Find Your Dream Home Easily</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://res.cloudinary.com" />
+    <link rel="dns-prefetch" href="https://res.cloudinary.com" />
+    <link rel="preload" as="image" href="https://res.cloudinary.com/dtrrzumju/image/upload/v1768890582/house1_q6sigs.webp" fetchpriority="high" />
+    <link rel="preload" as="image" href="https://res.cloudinary.com/dtrrzumju/image/upload/v1768890587/frontpage_c73a6m.svg" fetchpriority="high" />
     <link
       href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
       rel="stylesheet"
@@ -42,7 +46,7 @@
             style="padding: 1.4rem 2rem"
           >
             Property
-            <img src="https://res.cloudinary.com/dtrrzumju/image/upload/v1768890587/property_arrow_gtxe0y.svg" alt="property_arrow" />
+            <img src="https://res.cloudinary.com/dtrrzumju/image/upload/v1768890587/property_arrow_gtxe0y.svg" alt="property_arrow" width="12" height="12" decoding="async" />
           </a>
           <div class="dropdown-content">
             <a href="#tour" class="dropdown_btn">Tour</a>
@@ -73,6 +77,8 @@
               src="https://res.cloudinary.com/dtrrzumju/image/upload/v1768890579/Icons_uqzkai.svg"
               alt="location"
               class="search_location"
+              width="24"
+              height="24"
               decoding="async"
             />
             <input
@@ -86,7 +92,10 @@
               <img
                 src="https://res.cloudinary.com/dtrrzumju/image/upload/v1768890584/arrow2_unpa4a.svg"
                 alt="left_arrow"
+                width="20"
+                height="20"
                 style="margin-left: 1.7rem"
+                decoding="async"
               />
             </button>
           </div>
@@ -96,22 +105,34 @@
               src="https://res.cloudinary.com/dtrrzumju/image/upload/v1768890589/traveloka_logo_2_kjk0u3.svg"
               alt="traveloka"
               class="partnership_logo"
+              width="120"
+              height="40"
+              decoding="async"
             />
             <img
               src="https://res.cloudinary.com/dtrrzumju/image/upload/v1768890589/traveloka_logo_5_azhwyy.svg"
               alt="tiket"
               class="partnership_logo"
+              width="120"
+              height="40"
+              decoding="async"
             />
 
             <img
               src="https://res.cloudinary.com/dtrrzumju/image/upload/v1768890589/traveloka_logo_3_jvtzhc.svg"
               alt="Airbnb"
               class="partnership_logo"
+              width="120"
+              height="40"
+              decoding="async"
             />
             <img
               src="https://res.cloudinary.com/dtrrzumju/image/upload/v1768890589/traveloka_logo_4_z3fced.svg"
               alt="advisor"
               class="partnership_logo"
+              width="120"
+              height="40"
+              decoding="async"
             />
           </div>
         </div>
@@ -212,28 +233,28 @@
             class="search_btn head_btn text-label--medium"
             data-category="home"
           >
-            <img src="https://res.cloudinary.com/dtrrzumju/image/upload/v1768890587/house_gnclos.svg" alt="house" /> <span>House</span>
+            <img src="https://res.cloudinary.com/dtrrzumju/image/upload/v1768890587/house_gnclos.svg" alt="house" width="20" height="20" decoding="async" /> <span>House</span>
           </button>
           <button
             class="search_btn head_btn text-label--medium"
             data-category="villa"
           >
-            <img src="https://res.cloudinary.com/dtrrzumju/image/upload/v1768890590/villa_fuxj3o.svg" alt="villa" /><span>Villa</span>
+            <img src="https://res.cloudinary.com/dtrrzumju/image/upload/v1768890590/villa_fuxj3o.svg" alt="villa" width="20" height="20" decoding="async" /><span>Villa</span>
           </button>
           <button
             class="search_btn head_btn text-label--medium"
             data-category="apartment"
           >
-            <img src="https://res.cloudinary.com/dtrrzumju/image/upload/v1768890584/apartment_mmnmsv.svg" alt="apartment" /><span
+            <img src="https://res.cloudinary.com/dtrrzumju/image/upload/v1768890584/apartment_mmnmsv.svg" alt="apartment" width="20" height="20" decoding="async" /><span
               >Apartment</span
             >
           </button>
         </div>
         <div class="head_arrows">
           <button class="head_arrows__btn slider__btn--left btn--rounded" aria-label="Previous properties">
-            <img src="https://res.cloudinary.com/dtrrzumju/image/upload/v1768890584/arrow1_idhyhe.svg" alt="arrow1" /></button
+            <img src="https://res.cloudinary.com/dtrrzumju/image/upload/v1768890584/arrow1_idhyhe.svg" alt="arrow1" width="20" height="20" decoding="async" /></button
           ><button class="head_arrows__btn slider__btn--right btn--rounded" aria-label="Next properties">
-            <img src="https://res.cloudinary.com/dtrrzumju/image/upload/v1768890584/arrow2_unpa4a.svg" alt="arrow2" class="head_arrow2" />
+            <img src="https://res.cloudinary.com/dtrrzumju/image/upload/v1768890584/arrow2_unpa4a.svg" alt="arrow2" class="head_arrow2" width="20" height="20" decoding="async" />
           </button>
         </div>
       </div>
@@ -246,7 +267,7 @@
               class="house_card-image"
               width="376"
               height="382"
-              loading="lazy"
+              fetchpriority="high"
               decoding="async"
             />
             <div class="btn-filled--danger house_card__all">
@@ -254,6 +275,9 @@
                 src="https://res.cloudinary.com/dtrrzumju/image/upload/v1768890587/popular_vzdnt3.svg"
                 alt="best deal"
                 class="house_card__title__icon"
+                width="20"
+                height="20"
+                decoding="async"
               />
               <div class="house_card_text text-label--regular">Popular</div>
             </div>
@@ -268,7 +292,6 @@
                 class="house_owner__photo"
                 width="40"
                 height="40"
-                loading="lazy"
                 decoding="async"
               />
             </div>
@@ -290,7 +313,6 @@
               class="house_card-image"
               width="376"
               height="382"
-              loading="lazy"
               decoding="async"
             />
             <div class="btn-filled--info house_card__all">
@@ -298,6 +320,9 @@
                 src="https://res.cloudinary.com/dtrrzumju/image/upload/v1768890586/home_qpfhn7.svg"
                 alt="best deal"
                 class="house_card__title__icon"
+                width="20"
+                height="20"
+                decoding="async"
               />
               <div class="house_card_text text-label--regular">New Home</div>
             </div>
@@ -312,7 +337,6 @@
                 class="house_owner__photo"
                 width="40"
                 height="40"
-                loading="lazy"
                 decoding="async"
               />
             </div>
@@ -334,7 +358,6 @@
               class="house_card-image"
               width="376"
               height="382"
-              loading="lazy"
               decoding="async"
             />
             <div class="btn-filled--success house_card__all">
@@ -342,6 +365,9 @@
                 src="https://res.cloudinary.com/dtrrzumju/image/upload/v1768890585/bestDeals_z3j08p.svg"
                 alt="best deal"
                 class="house_card__title__icon"
+                width="20"
+                height="20"
+                decoding="async"
               />
               <div class="house_card_text text-label--regular">Best Deal</div>
             </div>
@@ -356,7 +382,6 @@
                 class="house_owner__photo"
                 width="40"
                 height="40"
-                loading="lazy"
                 decoding="async"
               />
             </div>
@@ -378,7 +403,6 @@
               class="house_card-image"
               width="376"
               height="382"
-              loading="lazy"
               decoding="async"
             />
             <div class="btn-filled--danger house_card__all">
@@ -386,6 +410,9 @@
                 src="https://res.cloudinary.com/dtrrzumju/image/upload/v1768890587/popular_vzdnt3.svg"
                 alt="best deal"
                 class="house_card__title__icon"
+                width="20"
+                height="20"
+                decoding="async"
               />
               <div class="house_card_text text-label--regular">Popular</div>
             </div>
@@ -400,7 +427,6 @@
                 class="house_owner__photo"
                 width="40"
                 height="40"
-                loading="lazy"
                 decoding="async"
               />
             </div>
@@ -429,7 +455,7 @@
         </div>
         <div class="tour_details">
           <div class="bedrooms tour_details__block">
-            <img src="https://res.cloudinary.com/dtrrzumju/image/upload/v1768890584/bedrooms_jn50bs.svg" alt="Bedrooms" />
+            <img src="https://res.cloudinary.com/dtrrzumju/image/upload/v1768890584/bedrooms_jn50bs.svg" alt="Bedrooms" width="24" height="24" decoding="async" />
             <div
               class="tour_details__text text-label--medium text-body--bold text--grey-light-2"
             >
@@ -437,7 +463,7 @@
             </div>
           </div>
           <div class="bathrooms tour_details__block">
-            <img src="https://res.cloudinary.com/dtrrzumju/image/upload/v1768890584/bathrooms_kvm6x9.svg" alt="Bathrooms" />
+            <img src="https://res.cloudinary.com/dtrrzumju/image/upload/v1768890584/bathrooms_kvm6x9.svg" alt="Bathrooms" width="24" height="24" decoding="async" />
             <div
               class="tour_details__text text-label--medium text-body--bold text--grey-light-2"
             >
@@ -445,7 +471,7 @@
             </div>
           </div>
           <div class="carport tour_details__block">
-            <img src="https://res.cloudinary.com/dtrrzumju/image/upload/v1768890586/carport_rnhfa5.svg" alt="carport" />
+            <img src="https://res.cloudinary.com/dtrrzumju/image/upload/v1768890586/carport_rnhfa5.svg" alt="carport" width="24" height="24" decoding="async" />
             <div
               class="tour_details__text text-label--medium text-body--bold text--grey-light-2"
             >
@@ -453,7 +479,7 @@
             </div>
           </div>
           <div class="floors tour_details__block">
-            <img src="https://res.cloudinary.com/dtrrzumju/image/upload/v1768890586/floors_uezwlp.svg" alt="Floors" />
+            <img src="https://res.cloudinary.com/dtrrzumju/image/upload/v1768890586/floors_uezwlp.svg" alt="Floors" width="24" height="24" decoding="async" />
             <div
               class="tour_details__text text-label--medium text-body--bold text--grey-light-2"
             >
@@ -481,17 +507,17 @@
             </div>
           </div>
           <button class="btn search_btn contact_btn" aria-label="Contact now">
-            <img src="https://res.cloudinary.com/dtrrzumju/image/upload/v1768890586/contact_lrm1ag.svg" alt="contact now" />
+            <img src="https://res.cloudinary.com/dtrrzumju/image/upload/v1768890586/contact_lrm1ag.svg" alt="contact now" width="20" height="20" decoding="async" />
             <span class="text-label--medium">Contact Now</span>
           </button>
         </div>
       </div>
       <div class="tour__imgs">
         <div class="grid-container">
-          <img src="https://res.cloudinary.com/dtrrzumju/image/upload/v1768890584/tour_img4_1_umpccl.webp" alt="Main house interior tour view" class="main-image tour__img" loading="lazy" decoding="async" />
-          <img src="https://res.cloudinary.com/dtrrzumju/image/upload/v1768890583/tour_img3_1_mtbepe.webp" alt="Living room with sofa" class="sofa tour__img" loading="lazy" decoding="async" />
-          <img src="https://res.cloudinary.com/dtrrzumju/image/upload/v1768890584/tour_img3_ms9grj.webp" alt="Interior decoration details" class="decor tour__img" loading="lazy" decoding="async" />
-          <img src="https://res.cloudinary.com/dtrrzumju/image/upload/v1768890584/tour_img4_t39ayd.webp" alt="Furnished room with chair" class="chair tour__img" loading="lazy" decoding="async" />
+          <img src="https://res.cloudinary.com/dtrrzumju/image/upload/v1768890584/tour_img4_1_umpccl.webp" alt="Main house interior tour view" class="main-image tour__img" width="370" height="480" decoding="async" />
+          <img src="https://res.cloudinary.com/dtrrzumju/image/upload/v1768890583/tour_img3_1_mtbepe.webp" alt="Living room with sofa" class="sofa tour__img" width="180" height="220" decoding="async" />
+          <img src="https://res.cloudinary.com/dtrrzumju/image/upload/v1768890584/tour_img3_ms9grj.webp" alt="Interior decoration details" class="decor tour__img" width="180" height="220" decoding="async" />
+          <img src="https://res.cloudinary.com/dtrrzumju/image/upload/v1768890584/tour_img4_t39ayd.webp" alt="Furnished room with chair" class="chair tour__img" width="180" height="220" decoding="async" />
         </div>
         <div class="start-button">
           <div class="triangle-right"></div>
@@ -540,7 +566,7 @@
                   </div>
                 </div>
                 <div class="review_text_star">
-                  <img src="https://res.cloudinary.com/dtrrzumju/image/upload/v1768890588/star_ut2ykn.svg" alt="star" />
+                  <img src="https://res.cloudinary.com/dtrrzumju/image/upload/v1768890588/star_ut2ykn.svg" alt="star" width="20" height="20" decoding="async" />
                   <span class="h-4 text-body--bold text-dark"> 4.3 </span>
                 </div>
               </div>
@@ -685,7 +711,7 @@
                   The things we need to check when we want to buy a house
                 </h4>
                 <div class="article_overview">
-                  <img src="https://res.cloudinary.com/dtrrzumju/image/upload/v1768890588/timeIcon_pqzz2r.svg" alt="time Icon" />
+                  <img src="https://res.cloudinary.com/dtrrzumju/image/upload/v1768890588/timeIcon_pqzz2r.svg" alt="time Icon" width="16" height="16" decoding="async" />
                   <span
                     class="article_overview-text text-label--regular text-body--bold text--grey-light-2"
                     >4 min read | 25 Apr 2021
@@ -727,7 +753,7 @@
                   7 Ways to distinguish the quality of the house we want to buy
                 </h4>
                 <div class="article_overview">
-                  <img src="https://res.cloudinary.com/dtrrzumju/image/upload/v1768890588/timeIcon_pqzz2r.svg" alt="time Icon" />
+                  <img src="https://res.cloudinary.com/dtrrzumju/image/upload/v1768890588/timeIcon_pqzz2r.svg" alt="time Icon" width="16" height="16" decoding="async" />
                   <span
                     class="article_overview-text text-label--regular text-body--bold text--grey-light-2"
                     >6 min read | 24 Apr 2021
@@ -769,7 +795,7 @@
                   The best way to know the quality of the house we want to buy
                 </h4>
                 <div class="article_overview">
-                  <img src="https://res.cloudinary.com/dtrrzumju/image/upload/v1768890588/timeIcon_pqzz2r.svg" alt="time Icon" />
+                  <img src="https://res.cloudinary.com/dtrrzumju/image/upload/v1768890588/timeIcon_pqzz2r.svg" alt="time Icon" width="16" height="16" decoding="async" />
                   <span
                     class="article_overview-text text-label--regular text-body--bold text--grey-light-2"
                     >2 min read | 24 Apr 2021
@@ -831,7 +857,7 @@
         Subscribe For More Info and update from Hounter
       </div>
       <div class="search subs_search">
-        <img src="https://res.cloudinary.com/dtrrzumju/image/upload/v1768890588/subs_img_f6kawd.svg" alt="Email" class="search_location" />
+        <img src="https://res.cloudinary.com/dtrrzumju/image/upload/v1768890588/subs_img_f6kawd.svg" alt="Email" class="search_location" width="24" height="24" decoding="async" />
         <input
           class="search_input text-label--regular"
           type="text"

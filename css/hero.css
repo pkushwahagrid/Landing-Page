@@ -26,10 +26,16 @@
 }
 .partnership {
   margin-top: 2.3rem;
-  /* border: 2px solid red; */
+  min-height: 4rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .partnership_logo {
   margin-right: 1.5rem;
+  width: 12rem;
+  height: 4rem;
+  object-fit: contain;
 }
 .search {
   border: 1px solid #e0e3eb;
@@ -62,6 +68,7 @@
   max-width: 71rem;
   overflow: scroll;
   margin-left: 3.5rem;
+  min-height: 10rem;
 }
 .recommend_section::-webkit-scrollbar {
   display: none;

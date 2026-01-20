@@ -2,23 +2,34 @@
 const recommendParent = document.querySelector(".recommend_section");
 const recommendContainer = document.querySelectorAll(".recommend__all");
 const createRecommend = () => {
+  // Use DocumentFragment to avoid multiple reflows
+  const fragment = document.createDocumentFragment();
   recommendContainer.forEach((item) => {
     const newItem = item.cloneNode(true);
-    recommendParent.appendChild(newItem);
+    fragment.appendChild(newItem);
   });
+  recommendParent.appendChild(fragment);
 };
-createRecommend();
+// Use requestAnimationFrame to avoid forced reflow
+requestAnimationFrame(createRecommend);
+
 //feature
 const house = document.querySelector(".house");
 const houseContainer = document.querySelectorAll(".house_container");
 const createHouse = () => {
+  // Use DocumentFragment to avoid multiple reflows
+  const fragment = document.createDocumentFragment();
   houseContainer.forEach((item) => {
     const newItem = item.cloneNode(true);
-    house.appendChild(newItem);
+    fragment.appendChild(newItem);
   });
+  house.appendChild(fragment);
 };
-createHouse();
-createHouse();
+// Use requestAnimationFrame to avoid forced reflow
+requestAnimationFrame(() => {
+  createHouse();
+  createHouse();
+});
 //Filter
 const houses = document.querySelectorAll(".house_container");
 const filterButtons = document.querySelectorAll(".head_btn");
@@ -69,25 +80,29 @@ btnLeft.addEventListener("click", (e) => {
 const reviewHead = document.querySelector(".review_head");
 const slideContainer = document.querySelectorAll(".slide");
 const createSlide = () => {
+  // Use DocumentFragment to avoid multiple reflows
+  const fragment = document.createDocumentFragment();
   slideContainer.forEach((item) => {
     const newItem = item.cloneNode(true);
-    reviewHead.appendChild(newItem);
+    fragment.appendChild(newItem);
   });
+  reviewHead.appendChild(fragment);
 };
-createSlide();
+// Use requestAnimationFrame to avoid forced reflow
+requestAnimationFrame(createSlide);
+
 //dots
 
 const slides = document.querySelectorAll(".slide");
 const dotContainer = document.querySelector(".dots");
 //insert adjacent element
 const createDots = () => {
-  slides.forEach((_, i) => {
+  // Build all HTML first, then insert once to avoid multiple reflows
+  const dotsHTML = Array.from(slides).map((_, i) => {
     const isActive = i === 0 ? 'true' : 'false';
-    dotContainer.insertAdjacentHTML(
-      "beforeend",
-      `<button class="dots__dot" data-slide="${i}" aria-label="Go to review ${i + 1}" aria-pressed="${isActive}"></button>`
-    );
-  });
+    return `<button class="dots__dot" data-slide="${i}" aria-label="Go to review ${i + 1}" aria-pressed="${isActive}"></button>`;
+  }).join('');
+  dotContainer.innerHTML = dotsHTML;
 };
 
 createDots();

@@ -5,6 +5,7 @@
   left: 50%;
   transform: translateX(-50%);
   display: flex;
+  min-height: 2rem;
 }
 
 .dots__dot {

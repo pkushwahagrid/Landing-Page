@@ -23,6 +23,7 @@
 .house {
   display: flex;
   overflow: scroll;
+  min-height: 50rem;
 }
 .house::-webkit-scrollbar {
   display: none;
@@ -92,7 +93,7 @@
 .review_head {
   display: flex;
   width: 150rem;
-
+  min-height: 50.5rem;
   overflow: scroll;
 }
 .review_head::-webkit-scrollbar {
