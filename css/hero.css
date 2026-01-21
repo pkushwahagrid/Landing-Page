@@ -30,6 +30,7 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  contain: layout style paint;
 }
 .partnership_logo {
   margin-right: 1.5rem;
