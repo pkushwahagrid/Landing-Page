@@ -1,4 +1,6 @@
-# https://www.robotstxt.org/robotstxt.html
+# Allow all search engines to index all pages
 User-agent: *
-Disallow:
+Allow: /
 
+# Sitemap location (update with your actual domain)
+Sitemap: https://splendid-melomakarona-2d3466.netlify.app/sitemap.xml

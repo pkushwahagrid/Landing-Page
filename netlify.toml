@@ -8,6 +8,8 @@
   for = "/*.html"
   [headers.values]
     Cache-Control = "public, max-age=0, must-revalidate"
+    # Allow search engine indexing
+    X-Robots-Tag = "index, follow, all"
     
 [[headers]]
   for = "/css/*"

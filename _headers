@@ -1,0 +1,24 @@
+# Default headers for all pages
+/*
+  X-Robots-Tag: index, follow, all
+  Cache-Control: public, max-age=31536000, immutable
+
+# HTML files - always fresh, allow indexing
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+  X-Robots-Tag: index, follow, all
+
+# Root index page
+/
+  X-Robots-Tag: index, follow, all
+  Cache-Control: public, max-age=0, must-revalidate
+
+# CSS files
+/css/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Font files
+/*.woff2
+  Cache-Control: public, max-age=31536000, immutable
+  Access-Control-Allow-Origin: *
+
