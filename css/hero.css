@@ -69,6 +69,7 @@
   overflow: scroll;
   margin-left: 3.5rem;
   min-height: 10rem;
+  contain: layout style;
 }
 .recommend_section::-webkit-scrollbar {
   display: none;

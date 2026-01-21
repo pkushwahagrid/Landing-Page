@@ -24,6 +24,7 @@
   display: flex;
   overflow: scroll;
   min-height: 50rem;
+  contain: layout style;
 }
 .house::-webkit-scrollbar {
   display: none;
